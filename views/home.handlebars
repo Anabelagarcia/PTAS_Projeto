@@ -1,0 +1,12 @@
+<h2>Cadastre-se</h2>
+{{#if usuario}}
+<ul>
+    {{#each usuarios}}
+        <li>{{this.nome}} - {{this.endereco}}</li>
+    {{/each}}
+</ul>
+
+    {{else}} 
+        <h2>Opss...Usuário não encontrado</h2>
+{{/if}}
+
